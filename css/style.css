@@ -33,6 +33,15 @@ body {
   top: 5px;
   box-shadow: 0 5px 0 #a50e61;
 }
+.section-title {
+  text-align: center;
+}
+.section-title h2 {
+  font-size: 40px;
+  border-bottom: 3px solid #ff008e;
+  display: inline-block;
+  margin: 20px 0;
+}
 /* navigation-Section */
 header {
   background: url("../images/cloud.png");
@@ -87,4 +96,33 @@ nav {
 }
 .banner-right img {
   width: 100%;
+}
+
+/* Feature-section */
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:30px
+}
+.single-feature {
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding:20px;
+}
+.single-feature .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ff008e;
+  padding: 20px;
+  color: white;
+}
+.single-feature a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #ff008e;
 }
